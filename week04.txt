@@ -1,0 +1,13 @@
+-깃허브와 로컬파일 연결하기
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (master)
+$뒤에 마스터를 메인으로 바꿈(인종차별)
+$ git branch -M main
+
+*git add . >commit -m >git push 
+
+해당 원격주소를 "오리진"이라고 추가하겠다/리모트:원격 < > 로컬
+git remote add origin https://github.com/rulala-max/cloudservice.git
+
+git remote -v : 원격지 등록된 곳 없으면 아무것도 안뜸/오리진등록하면 깃허브 어떤 주소와 바인딩된 지 확인 가능.
+git push -u origin main:오리진의 메인 브렌치에 업로드

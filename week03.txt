@@ -1,0 +1,27 @@
+git add week01re.txt > 올릴준비
+git add . >현재폴더의 모든파일 올림
+git commit -m  "" >git config로  선언
+git log >커밋기록 보기 (선택해서 엔터치면 복사됨)
+Author: rulala <rulala212@gmail.com>
+Date:   Wed Mar 18 15:48:06 2026 +0900
+
+    클라우드서비스 1~3주차
+새로운 파일 추가/기존파일 수정 후 깃 스테이터스 > git add . ( 잘못쳤을경우 컨씨로 빠져나가기) > 깃커밋메세지>nothing to commit, working tree clean(최신버전상태임)
+
+git log >>>
+commit ded3cede6d2737b55141a09e49330007df8636a9 (HEAD -> master)
+Author: rulala <rulala212@gmail.com>
+Date:   Wed Mar 18 16:16:17 2026 +0900
+
+    클라우드서비스 2주차수정 및 4주차 추가
+
+commit 75843217afa6d5a66d7783c6fbfc1ae34db987fa
+Author: rulala <rulala212@gmail.com>
+Date:   Wed Mar 18 15:48:06 2026 +0900
+
+    클라우드서비스 1~3주차
+
+ git checkout 7584321> 첫번째 커밋상태로 돌아감(해시코드 앞 7자리)
+git checkout - >다시 2번째 커밋으로 돌아감
+
+-스테이터스:변화를 보는것 / 로그:기록을 보는것
