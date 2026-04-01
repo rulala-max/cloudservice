@@ -4,7 +4,7 @@ kyungin@207-42 MINGW64 ~/Desktop/cloudservice (master)
 $뒤에 마스터를 메인으로 바꿈(인종차별)
 $ git branch -M main
 
-**git init>임의파일생성>git add . >commit -m >초기화됐기때문에 이메일,사용자필명 등록>다시커밋>
+**git init>임의파생성>git add . >commit -m >초기화됐기때문에 이메일,사용자필명 등록>다시커밋>
 >git remote add origin https://github.com/rulala-max/cloudservice.git>git remote -v >git push -u origin main>크롬인증
 >git clone https://github.com/rulala-max/cloudservice.git
 파일 다운로드
