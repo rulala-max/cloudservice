@@ -1,0 +1,4 @@
+바탕화면에 클라우드서비스>git init>임의파일생성>git add . >commit -m >초기화됐기때문에 이메일,사용자필명 등록>다시커밋>
+>git remote add origin https://github.com/rulala-max/cloudservice.git>git remote -v >git push -u origin main>크롬인증
+>git clone https://github.com/rulala-max/cloudservice.git .
+뒤에 점 붙이면=현재폴더 폴더안에 세부파일 그대로 들어감/점없으면 폴더안에 폴더 또생성
