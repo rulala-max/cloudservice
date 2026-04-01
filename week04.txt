@@ -4,20 +4,28 @@ kyungin@207-42 MINGW64 ~/Desktop/cloudservice (master)
 $뒤에 마스터를 메인으로 바꿈(인종차별)
 $ git branch -M main
 
-<<<<<<< HEAD
-*git add . >commit -m >git push 
-=======
 **git init>임의파일생성>git add . >commit -m >초기화됐기때문에 이메일,사용자필명 등록>다시커밋>
->git remote add origin https://github.com/rulala-max/cloudservice.git>git remote -v >git push -u origin main>크롬인증>git push **
->>>>>>> 0953ad2 (0401 update1)
+>git remote add origin https://github.com/rulala-max/cloudservice.git>git remote -v >git push -u origin main>크롬인증
+>git clone https://github.com/rulala-max/cloudservice.git
+파일 다운로드
+원격(origin) 자동 연결
+기본 브랜치까지 세팅 완료
+>cd cloudservice
+>git pull
+>git push 
+
+or
+
+>git pull --rebase origin main(원격에 나한테 없는 파일있을때)>로컬파일수정후 에드>
+>git push
+> git checkout -b main
+>git checkout main>add,commit>git rebase --continue>git push -u origin main
+>git push **
 
 해당 원격주소를 "오리진"이라고 추가하겠다/리모트:원격 < > 로컬
 git remote add origin https://github.com/rulala-max/cloudservice.git
 
 git remote -v : 원격지 등록된 곳 없으면 아무것도 안뜸/오리진등록하면 깃허브 어떤 주소와 바인딩된 지 확인 가능.
-<<<<<<< HEAD
-git push -u origin main:오리진의 메인 브렌치에 업로드
-=======
 git push -u origin main:오리진의 메인 브렌치에 업로드
 
 $ git config --global user.name "
@@ -251,4 +259,3 @@ week01re.txt  week02.txt  week03.txt  week04.txt
 
 kyungin@207-42 MINGW64 ~/Desktop/cloudservice (main)
 $
->>>>>>> 0953ad2 (0401 update1)
