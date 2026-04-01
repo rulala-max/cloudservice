@@ -8,7 +8,9 @@
 >#다른사람의 것을 클론할때 git remote -v하면 그 사람의 것이 뜸>touch a.txt>ls>git status>언트렉티드파일 나옴>a파일내용수정>
 git add . >git status> 커밋준비됨>깃커밋m>git log :a파일만 내 것으로 이름뜸>git push하면 그사람원격지로 업로드안됨(권한없음)
 >깃허브에 새 리포짓토리 새로만들고 베쉬창 돌아가기
->git remote remove origin(원작자정보 삭제)>git remote -v (원작자정보 없어진것확인)
->이 것과 깃허브 리포짓토리 바인딩>git remote add origin 리포짓토리주소
->git remote -v (내 이름으로 바뀐것 확인가능)>git push>(오류뜸 : git push --set-upstream origin main=git push -u origin main)
+>****git remote remove origin(원작자정보 삭제)>git remote -v (원작자정보 없어진것확인)
+>이 것과 깃허브 리포짓토리 바인딩하려면>***git remote add origin 리포짓토리주소
+>******git remote -v (내 이름으로 바뀐것 확인가능)
+>git push
+>(새깃 리포지토리주소와 바인딩해야함, 오류뜸 : git push --set-upstream origin main=***git push -u origin main)
 >완료(하지만 다른사람이 커밋한건 깃허브 커밋기록에 남아있음 기여자도)
