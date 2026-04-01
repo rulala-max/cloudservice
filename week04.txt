@@ -4,10 +4,251 @@ kyungin@207-42 MINGW64 ~/Desktop/cloudservice (master)
 $뒤에 마스터를 메인으로 바꿈(인종차별)
 $ git branch -M main
 
+<<<<<<< HEAD
 *git add . >commit -m >git push 
+=======
+**git init>임의파일생성>git add . >commit -m >초기화됐기때문에 이메일,사용자필명 등록>다시커밋>
+>git remote add origin https://github.com/rulala-max/cloudservice.git>git remote -v >git push -u origin main>크롬인증>git push **
+>>>>>>> 0953ad2 (0401 update1)
 
 해당 원격주소를 "오리진"이라고 추가하겠다/리모트:원격 < > 로컬
 git remote add origin https://github.com/rulala-max/cloudservice.git
 
 git remote -v : 원격지 등록된 곳 없으면 아무것도 안뜸/오리진등록하면 깃허브 어떤 주소와 바인딩된 지 확인 가능.
+<<<<<<< HEAD
 git push -u origin main:오리진의 메인 브렌치에 업로드
+=======
+git push -u origin main:오리진의 메인 브렌치에 업로드
+
+$ git config --global user.name "
+> rulala"
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (main)
+$ git config --global user.email "rulala212@gmail.com"
+
+
+**********************
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (master)
+$ ls
+week01re.txt  week02.txt  week03.txt  week04.txt
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   week03.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   week03.txt
+
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (master)
+$ log
+bash: log: command not found
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/kyungin/Desktop/cloudservice/.git/
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (master)
+$ git log
+commit ded3cede6d2737b55141a09e49330007df8636a9 (HEAD -> master)
+Author: rulala <rulala212@gmail.com>
+Date:   Wed Mar 18 16:16:17 2026 +0900
+
+    클라우드서비스 2주차수정 및 4주차 추가
+
+commit 75843217afa6d5a66d7783c6fbfc1ae34db987fa
+Author: rulala <rulala212@gmail.com>
+Date:   Wed Mar 18 15:48:06 2026 +0900
+
+    클라우드서비스 1~3주차
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   week03.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   week03.txt
+
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (master)
+$ git add .
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (master)
+$ git commit -m   "클라우드서비스 4주차"
+> git init
+> ^C
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   week03.txt
+
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (master)
+$ git lof
+git: 'lof' is not a git command. See 'git --help'.
+
+The most similar command is
+        log
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (master)
+$ git log
+commit ded3cede6d2737b55141a09e49330007df8636a9 (HEAD -> master)
+Author: rulala <rulala212@gmail.com>
+Date:   Wed Mar 18 16:16:17 2026 +0900
+
+    클라우드서비스 2주차수정 및 4주차 추가
+
+commit 75843217afa6d5a66d7783c6fbfc1ae34db987fa
+Author: rulala <rulala212@gmail.com>
+Date:   Wed Mar 18 15:48:06 2026 +0900
+
+    클라우드서비스 1~3주차
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (master)
+$ git branxh -M main
+git: 'branxh' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (master)
+$ git branch -M main
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (main)
+$ $ git branch -M main
+^C
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (main)
+$ git remote add origin https://github.com/rulala-max/cloudservice.git
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (main)
+$ git remote -v
+origin  https://github.com/rulala-max/cloudservice.git (fetch)
+origin  https://github.com/rulala-max/cloudservice.git (push)
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 1.33 KiB | 1.33 MiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/rulala-max/cloudservice.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (main)
+$ git log
+commit ded3cede6d2737b55141a09e49330007df8636a9 (HEAD -> main, origin/main)
+Author: rulala <rulala212@gmail.com>
+Date:   Wed Mar 18 16:16:17 2026 +0900
+
+    클라우드서비스 2주차수정 및 4주차 추가
+
+commit 75843217afa6d5a66d7783c6fbfc1ae34db987fa
+Author: rulala <rulala212@gmail.com>
+Date:   Wed Mar 18 15:48:06 2026 +0900
+
+    클라우드서비스 1~3주차
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   week03.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   week04.txt
+
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (main)
+$ ^C
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (main)
+$ git add .
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (main)
+$ git commit -m "week04 update"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'kyungin@207-42.(none)')
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (main)
+$ ^C
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (main)
+$ ^C[200~ git config --global user.email "you@example.com"~
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (main)
+$ git config --global user.name "
+> rulala"
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (main)
+$ git config --global user.email "rulala212@gmail.com"
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (main)
+$ git commit -m "week04 update"
+[main 219079f] week04 update
+ 2 files changed, 40 insertions(+)
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (main)
+$ git add .
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (main)
+$ git commit -m "week04 update"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (main)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.37 KiB | 1.37 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/rulala-max/cloudservice.git
+   ded3ced..219079f  main -> main
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (main)
+$ ls
+week01re.txt  week02.txt  week03.txt  week04.txt
+
+kyungin@207-42 MINGW64 ~/Desktop/cloudservice (main)
+$
+>>>>>>> 0953ad2 (0401 update1)
