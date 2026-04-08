@@ -30,3 +30,11 @@ Unmerged paths:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 >git add week06.txt>status 수정된것 확인가능>커밋>푸시
+
+
+- git log --oneline --graph 
+
+충돌상황 c : 원격에서 수정/로컬도 새로운 파일 add까지만 
+git fetch>git pull>
+
+-Vim 파일명.txt >i: 리눅스 입력모드 > esc 일반모드 > :wq! 강제저장후 종료
