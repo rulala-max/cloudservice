@@ -1,9 +1,10 @@
 git log --oneline :커밋 히스토리를 한 줄씩 간단하게 보는 명령어(해시태그7자리만)
 cat week06 : 해당파일내용
 
-<<<<<<< HEAD
+
 충돌상황A : 원격이 앞서감 >로그확인시>a16b821 (HEAD -> main, origin/main, origin/HEAD) 0408_6 충돌관리
--헤드는 현재위치
+-헤드는 현재커밋
+6767c72 (origin/main, origin/HEAD) :원격 저장소 GitHub의 main가 가리키는 커밋
 git fetch : 최신커밋 가져와서 내 로컬에 최신 코드는 받아놨지만 아직 적용 안 한 상태/ 
 	  a16b821(로컬상태)..cf5f6e3(원격상태, 더최신)  main       -> origin/main
 
@@ -11,4 +12,5 @@ git fetch : 최신커밋 가져와서 내 로컬에 최신 코드는 받아놨�
 >원격수정내용을 로컬에 동기화시키려면 git pull
 
 충돌상황B: 원격수정, 로컬수정 동시에 진행되어 둘다 다름(해시태그 비교)>로컬에서 push시도시 오류
->git fetch
+>git fetch>git pull>합쳐짐, 메모안에 충돌났던 위치 표시됨, 수정하기
+>git status 확인시 둘다 수정된것 확인가능
