@@ -34,7 +34,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 - git log --oneline --graph 
 
-충돌상황 c : 원격에서 수정/로컬도 새로운 파일 add까지만 
-git fetch>git pull>
+충돌상황 c : 원격에서 기존파일 수정/로컬은 새로운 파일 add까지만 > 자동머지됨
+git fetch>git pull
 
 -Vim 파일명.txt >i: 리눅스 입력모드 > esc 일반모드 > :wq! 강제저장후 종료
