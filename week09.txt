@@ -2,3 +2,23 @@
 중간고사 해설
 10주차 코엑스 수업
 금일 수업 오리엔테이션 : 브랜치(협업 필수 기능)
+
+
+git branch (담당한 일등 영어로 쓰기) > git branch 하면 담당한 브랜치 나옴(현재작업브랜치는*로 표시됨)>git switch (backend)> 작업브랜치 변화>
+만약에 백엔드브랜치에서 백앤드.txt치고 다른 브랜치에서 ls했을때 안나오게 하고싶음
+> rm backend.txt 로 제거하면 모든 브랜치에서 제거(아직 커밋안해서 다 나오는것)
+>백엔드 브랜치에서 백앤드.txt생성후 git add > 커밋하기
+
+ai브랜치에서 파일 여러개 만들면 깃 로그치면 ai가 앞서가지만 깃로그 쳐도 ai는 안나옴
+ (origin/main, origin/HEAD, main, iot, frontend)>>iot등은 앞서가지않음(그들은 새로 만든거 없는것을 확인가능)
+>각각 브랜치로 가서 메인으로 합쳐야 ai브랜치의 것들이 보임(파일에서도 그 파일들은 브랜치 바뀌면 못엶)
+> /*******git push -u origin ai >깃허브에서 ai브랜치 누르면 보임
+
+iot입장에서 git log --graph --oneline하면 iot작업물만 나오고
+ 메인에선 다른 브랜치가 한것 아무것도 안보임
+
+
+******메인으로 iot 브랜치 합치기
+>메인이동후git merge iot>이후 log 보면 iot 작업내용 뜸> git push
+
+>merge>esc> : > q (고친내용있으면 : > wp!)
