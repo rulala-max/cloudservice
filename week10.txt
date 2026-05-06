@@ -1,0 +1,20 @@
+브랜치삭제(local)
+git branch -d 브랜치이름
+
+브랜치삭제(remote)
+git puch origin --delete 브랜치명
+ 
+vi에디터 기초
+명령, 입력, 명령행 
+
+일반모드(esc),입력모드(ioa),명령행모드(:)
+dd(현재행 잘라내기),x (한글자 삭제),yy(복사),p(붙여넣기)
+입력모드
+편집
+명령행모드
+w(저장),q(종료),!(강제로)
+
+3교시
+브랜치 생성 후 이동
+git checkout -b 브랜치명
+git switch -c 브랜치명

@@ -1,0 +1,69 @@
+*실제개발시 메인브랜치 사용 잘 안함(개별브렌치활용)
+
+ *복습
+$ git clone https://github.com/rulala-max/cloudservice.git
+$ cd cloudservice
+$ git add .
+***
+
+***그냥 클론하면 메인브랜치만 뜸 >
+$ git commit -m "0506"
+$  git config --global user.email "rulala212@gmail.com"
+$ git config --global user.name "rulala"
+$ git branch -M main
+
+*******
+1. 브랜치는 독립적인 작업 공간을 만드는 것브랜치
+#생성: git branch [브랜치명] (예: git branch backend)
+#브랜치 목록 확인: git branch (현재 위치한 브랜치는 *로 표시됨)
+#브랜치 이동: git switch [브랜치명] (또는 git checkout [브랜치명])
+
+특정 브랜치에서 파일을 만들고 커밋(add & commit)을 하지 않으면 다른 브랜치로 이동해도 그 파일이 계속 보입니다.
+Git이 관리하기 전 단계이기 때문입니다. 반드시 해당 브랜치에서 커밋을 완료해야 해당 브랜치에 귀속
+
+***원격 저장소 반영: git push -u origin [브랜치명]을 해야 깃허브 웹사이트에서도 해당 브랜치와 작업 내용이 나타납니다.
+
+로그 확인: git log --graph --oneline
+이 명령어를 쓰면 현재 브랜치의 진행 상황을 한눈에 볼 수 있습니다. iot 브랜치에서는 iot 작업만 보이고, main에서는 아직 합치기 전이라면 다른 브랜치의 작업이 보이지 않는 것이 정상입니다.
+
+*******병합(Merge)과 Vim 에디터 탈출
+다른 브랜치에서 작업한 내용을 메인 줄기(main)로 가져오는 과정입니다.
+
+#병합 순서
+기준점으로 이동: git switch main
+가져오기: git merge [대상브랜치] (예: git merge iot)
+>git merge []>esc> : > q (고친내용있으면 : > wp!)
+
+$ git branch -c dev01:브랜치만 만듦
+git switch -c dev02:브랜치만들고 해당브랜치로 이동
+$ git checkout -b dev03:브랜치만들고 해당브랜치로 이동(위와 동일명령어)
+ git checkout main
+
+**git branch -d 브랜치명
+>>git log --oneline --graph
+
+
+rm *.txt > 다지워짐
+ls -a >깃파일은 안지워진것 확인 가능 >rm -rf .git 
+> git clone https://github.com/rulala-max/cloudservice.git .
+
+
+*클론을 메인에서 해서 git branch 하면 브랜치 확인 x
+*안쓰는 브랜치(합친것들 ) 삭제하는게 좋음
+
+* git push origin --delete ai : 브랜치 삭제
+
+#vi에디터로 바로 txt파일 만들기
+[일반>i(입력모드)>esc일반모드> ; >명령모드>esc 일반모드]
+vi week10.txt >i >내용 넣기> :q 엔터로 빠져나감 >vi week10.txt에서 
+방향키로  삭제할 부분에 접근
+>x누르면 글자 1개씩 삭제(커서위치삭제)
+>X 커서앞글자 삭제>:q>
+수정된거 있는데 저장안함이라고 뜸>그냥 엔터누르면 수정반영x
+>:q! 강제종료,저장안함/:wq! 강제저장후종료
+
+y복사
+복사할 것에 커서 일반모드로 두고 yy누르면 복사/
+복사할 줄에 커서 올리고 일반모드로p하면 붙여넣기
+dd:커서를 포함하는 행 잘라내기
+5dd:커서를 포함하는 행 포함하여 5행 잘라내기
